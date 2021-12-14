@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #fafafa; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+input {
+  width: 256px;
+  height: 36px;
+  padding-left: 8px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px; }
+  input:focus {
+    outline: 0; }
+
+#header {
+  width: 100%;
+  position: relative;
+  background-color: #fff; }
+  #header .nav-container {
+    width: 100%;
+    max-width: 975px;
+    margin: auto; }
+    #header .nav-container .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0; }
+      #header .nav-container .navbar .instagram-icon img {
+        width: 103px; }
+      #header .nav-container .navbar .icons i {
+        margin: 0 0.5rem; }
+
+#main {
+  margin-top: 2rem;
+  width: 100%; }
+  #main .main__content-container {
+    width: 100%;
+    max-width: 975px; }
+    #main .main__content-container .main__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center; }
+      #main .main__content-container .main__content .posts {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem; }
+        #main .main__content-container .main__content .posts .post {
+          background-color: #fff; }
