@@ -124,36 +124,6 @@ input {
               color: #000; }
             #main .main__content-container .main__content .posts .post__comments .comments .comment__content {
               display: inline; }
-            #main .main__content-container .main__content .posts .post__comments .comments .comment__date-created {
-              margin-top: 0.4rem;
-              margin-bottom: 14px; }
-              #main .main__content-container .main__content .posts .post__comments .comments .comment__date-created small {
-                color: #8e8e8e;
-                font-weight: lighter; }
-            #main .main__content-container .main__content .posts .post__comments .comments .comment__add {
-              width: 100%;
-              border-top: 1px solid #efefef; }
-              #main .main__content-container .main__content .posts .post__comments .comments .comment__add form {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 0.5rem; }
-                #main .main__content-container .main__content .posts .post__comments .comments .comment__add form input {
-                  flex: 3;
-                  border: none;
-                  padding: 0.5rem;
-                  background-color: #fff; }
-                #main .main__content-container .main__content .posts .post__comments .comments .comment__add form button {
-                  border: none;
-                  color: #0095f6;
-                  font-weight: bold;
-                  padding: 0.3rem;
-                  background-color: #fcf8f8;
-                  margin-right: 10px;
-                  cursor: pointer; }
-                  #main .main__content-container .main__content .posts .post__comments .comments .comment__add form button:active, #main .main__content-container .main__content .posts .post__comments .comments .comment__add form button:hover {
-                    opacity: 0.9; }
       #main .main__content-container .main__content .suggestions {
         position: fixed;
         top: 10rem;
@@ -167,8 +137,8 @@ input {
           justify-content: space-between;
           width: 100%; }
           #main .main__content-container .main__content .suggestions .user-account .user-profile__picture {
-            width: 56px;
-            height: 56px;
+            width: 46px;
+            height: 46px;
             border-radius: 50%;
             background-color: #000; }
           #main .main__content-container .main__content .suggestions .user-account .user-info {
@@ -230,3 +200,41 @@ input {
 .copy-rights {
   color: #8e8e8e;
   font-size: 13px; }
+
+.post__date-created {
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem; }
+  .post__date-created small {
+    color: #8e8e8e;
+    font-weight: lighter; }
+
+.comment {
+  margin-top: 0.5rem; }
+  .comment .comment__author {
+    color: #000;
+    font-weight: bold; }
+
+.comment__add {
+  width: 100%;
+  border-top: 1px solid #efefef; }
+  .comment__add form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem; }
+    .comment__add form input {
+      flex: 3;
+      border: none;
+      padding: 0.5rem;
+      background-color: #fff; }
+    .comment__add form button {
+      border: none;
+      color: #0095f6;
+      font-weight: bold;
+      padding: 0.3rem;
+      background-color: #fcf8f8;
+      margin-right: 10px;
+      cursor: pointer; }
+      .comment__add form button:active, .comment__add form button:hover {
+        opacity: 0.9; }
