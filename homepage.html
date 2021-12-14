@@ -20,12 +20,13 @@
     <header id="header">
       <div class="nav-container">
         <section class="navbar">
-          <div class="instagram-icon">
-            <img
-              src="../dist/images/instagram-wordmark-small.png"
-              alt="Instagram"
-            />
-          </div>
+          <a href="#"
+            ><div class="instagram-icon">
+              <img
+                src="../dist/images/instagram-wordmark-small.png"
+                alt="Instagram"
+              /></div
+          ></a>
           <div class="search">
             <input
               type="search"
@@ -35,11 +36,12 @@
             />
           </div>
           <div class="icons">
-            <i class="fas fa-home fa-lg"></i
-            ><i class="far fa-comments fa-lg"></i
-            ><i class="fas fa-plus fa-lg"></i><i class="fas fa-search fa-lg"></i
-            ><i class="far fa-heart fa-lg"></i>
-            <i class="fas fa-user fa-lg"></i>
+            <a href="#"><i class="fas fa-home fa-lg"></i></a>
+            <a href="#"><i class="far fa-comments fa-lg"></i></a>
+            <a href="#"><i class="fas fa-plus fa-lg"></i></a
+            ><a href=""><i class="fas fa-search fa-lg"></i></a>
+            <a href="#"><i class="far fa-heart fa-lg"></i></a>
+            <a href="#"><i class="fas fa-user fa-lg"></i></a>
           </div>
         </section>
       </div>
@@ -50,14 +52,66 @@
           <div class="posts">
             <div class="post">
               <div class="post-top">
-                <div class="post__profile-links"></div>
-                <div class="poster-more"></div>
+                <div class="post__profile-links">
+                  <div class="poster__picture"></div>
+                  <div class="poster__username">
+                    <a href="#">joe_photographer</a>
+                  </div>
+                </div>
+                <div class="poster-more"><i class="fas fa-ellipsis-h"></i></div>
               </div>
-              <div class="post__picture"></div>
-              <div class="post__interaction"></div>
-              <div class="post__likes"></div>
-              <div class="post__bio"></div>
-              <div class="post__comments"></div>
+              <div class="post__picture">
+                <img
+                  src="../dist/images/demo-pic-1.jpg"
+                  alt="joe_photographer picture"
+                />
+              </div>
+              <div class="post__interaction">
+                <div class="post__interaction-left">
+                  <a href="#"><i class="far fa-heart fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-commenting-o fa-lg"></i></a>
+                  <a href="#"><i class="far fa-comments fa-lg"></i></a>
+                </div>
+                <div class="post__interaction-right">
+                  <a href="#"><i class="far fa-save fa-lg"></i></a>
+                </div>
+              </div>
+              <div class="post__likes">2,132 likes</div>
+              <div class="post__bio">
+                <a href="#">joe_photographer</a>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Labore inventore debitis ad perspiciatis cum est deleniti
+                  tenetur asperiores pariatur optio illum, exercitationem beatae
+                  ab natus similique magni rem ex soluta commodi nostrum numquam
+                  repudiandae doloribus ullam! Eligendi at ratione placeat.
+                </p>
+              </div>
+              <div class="post__comments">
+                <p class="comments__title">Comments</p>
+                <div class="comments">
+                  <a href="#" class="comment__author">ali_fattahian</a>
+                  <p class="comment__content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Odit minus et quos qui laudantium, tempore repudiandae sit
+                    dolor reprehenderit neque.
+                  </p>
+                  <div class="comment__date-created">
+                    <small>4 HOURS AGO</small>
+                  </div>
+                  <div class="comment__add">
+                    <form action="#" method="post">
+                      <input
+                        type="text"
+                        name="comment"
+                        id="comment"
+                        placeholder="Add a comment..."
+                      />
+                      <button type="submit">Post</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
               <div class="post__date-created"></div>
             </div>
           </div>

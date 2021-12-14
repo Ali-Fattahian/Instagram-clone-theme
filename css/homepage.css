@@ -40,6 +40,8 @@ input {
       padding: 1rem 0; }
       #header .nav-container .navbar .instagram-icon img {
         width: 103px; }
+      #header .nav-container .navbar .icons a {
+        color: #000; }
       #header .nav-container .navbar .icons i {
         margin: 0 0.5rem; }
 
@@ -48,7 +50,8 @@ input {
   width: 100%; }
   #main .main__content-container {
     width: 100%;
-    max-width: 975px; }
+    max-width: 975px;
+    margin: auto; }
     #main .main__content-container .main__content {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -61,4 +64,93 @@ input {
         align-items: center;
         gap: 2rem; }
         #main .main__content-container .main__content .posts .post {
-          background-color: #fff; }
+          background-color: #fff;
+          border: 1px solid #e1e1e1; }
+          #main .main__content-container .main__content .posts .post .post-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px;
+            border: 1px solid #e1e1e1;
+            border-bottom: none; }
+            #main .main__content-container .main__content .posts .post .post-top .post__profile-links {
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              #main .main__content-container .main__content .posts .post .post-top .post__profile-links .poster__picture {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: #000;
+                margin-right: 0.75rem; }
+              #main .main__content-container .main__content .posts .post .post-top .post__profile-links .poster__username a {
+                color: #000;
+                font-weight: bold; }
+                #main .main__content-container .main__content .posts .post .post-top .post__profile-links .poster__username a:active, #main .main__content-container .main__content .posts .post .post-top .post__profile-links .poster__username a:hover {
+                  text-decoration: underline; }
+        #main .main__content-container .main__content .posts .post__picture img {
+          width: 614px;
+          object-fit: cover; }
+        #main .main__content-container .main__content .posts .post__interaction {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 14px; }
+          #main .main__content-container .main__content .posts .post__interaction a {
+            color: #000; }
+        #main .main__content-container .main__content .posts .post__likes {
+          font-weight: bold;
+          padding-left: 14px;
+          margin-bottom: 0.4rem; }
+        #main .main__content-container .main__content .posts .post__bio {
+          padding-left: 14px; }
+          #main .main__content-container .main__content .posts .post__bio a {
+            color: #000;
+            font-weight: bold; }
+            #main .main__content-container .main__content .posts .post__bio a:active, #main .main__content-container .main__content .posts .post__bio a:hover {
+              text-decoration: underline; }
+          #main .main__content-container .main__content .posts .post__bio p {
+            margin-top: 0.4rem; }
+        #main .main__content-container .main__content .posts .post__comments {
+          padding-left: 14px;
+          margin: 0.4rem 0; }
+          #main .main__content-container .main__content .posts .post__comments .comments__title {
+            color: #8e8e8e; }
+          #main .main__content-container .main__content .posts .post__comments .comments {
+            margin-top: 0.4rem; }
+            #main .main__content-container .main__content .posts .post__comments .comments .comment__author {
+              font-weight: bold;
+              color: #000; }
+            #main .main__content-container .main__content .posts .post__comments .comments .comment__content {
+              display: inline; }
+            #main .main__content-container .main__content .posts .post__comments .comments .comment__date-created {
+              margin-top: 0.4rem;
+              margin-bottom: 14px; }
+              #main .main__content-container .main__content .posts .post__comments .comments .comment__date-created small {
+                color: #8e8e8e;
+                font-weight: lighter; }
+            #main .main__content-container .main__content .posts .post__comments .comments .comment__add {
+              width: 100%;
+              border-top: 1px solid #efefef; }
+              #main .main__content-container .main__content .posts .post__comments .comments .comment__add form {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 0.5rem; }
+                #main .main__content-container .main__content .posts .post__comments .comments .comment__add form input {
+                  flex: 3;
+                  border: none;
+                  padding: 0.5rem;
+                  background-color: #fff; }
+                #main .main__content-container .main__content .posts .post__comments .comments .comment__add form button {
+                  border: none;
+                  color: #0095f6;
+                  font-weight: bold;
+                  padding: 0.3rem;
+                  background-color: #fcf8f8;
+                  margin-right: 10px;
+                  cursor: pointer; }
+                  #main .main__content-container .main__content .posts .post__comments .comments .comment__add form button:active, #main .main__content-container .main__content .posts .post__comments .comments .comment__add form button:hover {
+                    opacity: 0.9; }
