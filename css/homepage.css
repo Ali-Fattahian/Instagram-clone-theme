@@ -56,13 +56,15 @@ input {
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      position: relative; }
       #main .main__content-container .main__content .posts {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
-        gap: 2rem; }
+        gap: 2rem;
+        max-width: 614px; }
         #main .main__content-container .main__content .posts .post {
           background-color: #fff;
           border: 1px solid #e1e1e1; }
@@ -125,20 +127,20 @@ input {
             #main .main__content-container .main__content .posts .post__comments .comments .comment__content {
               display: inline; }
       #main .main__content-container .main__content .suggestions {
-        position: fixed;
-        top: 10rem;
-        right: 2rem;
+        position: absolute;
+        top: 0;
+        left: 671px;
         padding: 1rem;
-        width: 25rem; }
+        width: 293px; }
         #main .main__content-container .main__content .suggestions .user-account {
           display: flex;
           justify-content: center;
           align-items: center;
           justify-content: space-between;
           width: 100%; }
-          #main .main__content-container .main__content .suggestions .user-account .user-profile__picture {
-            width: 46px;
-            height: 46px;
+          #main .main__content-container .main__content .suggestions .user-account .user-profile__picture div {
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             background-color: #000; }
           #main .main__content-container .main__content .suggestions .user-account .user-info {
@@ -238,3 +240,14 @@ input {
       cursor: pointer; }
       .comment__add form button:active, .comment__add form button:hover {
         opacity: 0.9; }
+
+@media screen and (max-width: 1000px) {
+  #main .main__content-container .main__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .suggestions {
+    display: none; }
+  .spacefiller {
+    display: none; } }
