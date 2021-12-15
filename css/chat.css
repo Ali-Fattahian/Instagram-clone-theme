@@ -1,0 +1,77 @@
+.chat-container {
+  width: 100%;
+  max-width: 975px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .chat-container .chat-users-container {
+    border-right: 1px solid #dbdbdb; }
+  .chat-container .chat-users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1; }
+    .chat-container .chat-users .chat-users-user__container {
+      border-bottom: 1px solid #dbdbdb; }
+    .chat-container .chat-users .user {
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .chat-container .chat-users .user a {
+        color: #000; }
+      .chat-container .chat-users .user .user-username {
+        font-size: 1.5rem;
+        font-weight: bold; }
+      .chat-container .chat-users .user .user-send-message {
+        margin-left: 2rem; }
+    .chat-container .chat-users .other-users {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem; }
+      .chat-container .chat-users .other-users a {
+        color: #000; }
+      .chat-container .chat-users .other-users .other-user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem; }
+        .chat-container .chat-users .other-users .other-user .other-user__picture {
+          margin-right: 1rem; }
+        .chat-container .chat-users .other-users .other-user .picture {
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          background-color: #000; }
+        .chat-container .chat-users .other-users .other-user .other-user__info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          align-items: start; }
+          .chat-container .chat-users .other-users .other-user .other-user__info .other-user__last-message {
+            color: #8e8e8e; }
+            .chat-container .chat-users .other-users .other-user .other-user__info .other-user__last-message p {
+              display: inline; }
+  .chat-container .chat-room {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; }
+    .chat-container .chat-room .chat-user-container {
+      border-bottom: 1px solid #dbdbdb; }
+      .chat-container .chat-room .chat-user-container .chat-user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: start;
+        padding: 1rem; }
