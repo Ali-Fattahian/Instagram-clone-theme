@@ -6,8 +6,7 @@
   border: 1px solid #dbdbdb;
   margin-top: 2rem;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   .chat-container .chat-users-container {
     border-right: 1px solid #dbdbdb; }
   .chat-container .chat-users {
@@ -20,14 +19,14 @@
     .chat-container .chat-users .chat-users-user__container {
       border-bottom: 1px solid #dbdbdb; }
     .chat-container .chat-users .user {
-      padding: 1rem 3rem;
+      padding: 18px 5rem;
       display: flex;
       justify-content: center;
       align-items: center; }
       .chat-container .chat-users .user a {
         color: #000; }
       .chat-container .chat-users .user .user-username {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-weight: bold; }
       .chat-container .chat-users .user .user-send-message {
         margin-left: 2rem; }
@@ -65,7 +64,7 @@
     flex: 2;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-self: flex-start;
     flex-direction: column; }
     .chat-container .chat-room .chat-user-container {
       border-bottom: 1px solid #dbdbdb; }
@@ -75,3 +74,53 @@
         align-items: center;
         justify-content: start;
         padding: 1rem; }
+        .chat-container .chat-room .chat-user-container .chat-user .user-picture {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background-color: #000; }
+        .chat-container .chat-room .chat-user-container .chat-user .chat-user__name {
+          font-size: 1.1rem;
+          font-weight: bold;
+          color: #262626;
+          margin-left: 10px; }
+    .chat-container .chat-room .chat-messages-container {
+      padding: 1rem; }
+      .chat-container .chat-room .chat-messages-container .chat-messages {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; }
+        .chat-container .chat-room .chat-messages-container .chat-messages .message-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          justify-content: flex-end; }
+          .chat-container .chat-room .chat-messages-container .chat-messages .message-container:nth-child(odd) {
+            justify-content: flex-start; }
+    .chat-container .chat-room .chat-send-message {
+      padding: 1.5rem; }
+      .chat-container .chat-room .chat-send-message form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border: 1px solid #dbdbdb;
+        border-radius: 5rem; }
+        .chat-container .chat-room .chat-send-message form .send-message-left a {
+          margin-right: 0.3rem; }
+        .chat-container .chat-room .chat-send-message form .send-message-right a {
+          margin-left: 14px; }
+        .chat-container .chat-room .chat-send-message form > div {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .chat-container .chat-room .chat-send-message form a {
+          color: #262626; }
+        .chat-container .chat-room .chat-send-message form input {
+          border: none;
+          background-color: #fff; }
