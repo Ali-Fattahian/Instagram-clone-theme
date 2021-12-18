@@ -27,17 +27,19 @@ input {
 #header {
   width: 100%;
   position: relative;
-  background-color: #fff; }
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb; }
   #header .nav-container {
     width: 100%;
     max-width: 975px;
     margin: auto; }
     #header .nav-container .navbar {
       width: 100%;
+      min-width: 376px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 0; }
+      padding: 13px 1rem; }
       #header .nav-container .navbar .instagram-icon img {
         width: 103px; }
       #header .nav-container .navbar .icons a {
@@ -241,7 +243,7 @@ input {
       .comment__add form button:active, .comment__add form button:hover {
         opacity: 0.9; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 641px) {
   #main .main__content-container .main__content {
     display: flex;
     justify-content: center;
@@ -250,4 +252,32 @@ input {
   .suggestions {
     display: none; }
   .spacefiller {
+    display: none; } }
+
+@media screen and (max-width: 640px) and (min-width: 617px) {
+  #main .main__content-container .main__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .suggestions {
+    display: none; }
+  .spacefiller {
+    display: none; }
+  .nav-container .navbar .search {
+    display: none; } }
+
+@media screen and (max-width: 616px) {
+  #main .main__content-container .main__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  #main .main__content .posts .post .post__picture img {
+    width: 100vw; }
+  .suggestions {
+    display: none; }
+  .spacefiller {
+    display: none; }
+  .nav-container .navbar .search {
     display: none; } }
