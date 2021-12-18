@@ -69,3 +69,21 @@
         width: 100%;
         max-width: 293px;
         object-fit: center center/cover; }
+
+@media screen and (max-width: 735px) {
+  #user-main .user-container .user-information {
+    flex-direction: column;
+    font-size: 14px; }
+    #user-main .user-container .user-information .user-profile__picture .picture {
+      width: 77px;
+      height: 77px; }
+    #user-main .user-container .user-information .user-profile__details {
+      padding-left: 0; }
+      #user-main .user-container .user-information .user-profile__details .user-name-interaction {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center; }
+        #user-main .user-container .user-information .user-profile__details .user-name-interaction .user-username {
+          margin-bottom: 1rem; }
+        #user-main .user-container .user-information .user-profile__details .user-name-interaction .user-interaction {
+          margin-left: 0; } }
