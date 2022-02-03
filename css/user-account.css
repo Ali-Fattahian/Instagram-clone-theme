@@ -1,3 +1,6 @@
+.hidden {
+  display: none; }
+
 #user-main {
   width: 100%; }
   #user-main .user-container {
