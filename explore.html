@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bc2a3a5e96.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./images/instagram-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="./css/explore.css" />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="nav-container">
+        <section class="navbar">
+          <a href="#"
+            ><div class="instagram-icon">
+              <img
+                src="../dist/images/instagram-wordmark-small.png"
+                alt="Instagram"
+              /></div
+          ></a>
+          <div class="search">
+            <input
+              type="search"
+              name="searchquery"
+              id="searchquery"
+              placeholder="Search"
+            />
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fas fa-home fa-lg"></i></a>
+            <a href="#"><i class="far fa-comments fa-lg"></i></a>
+            <a href="#"><i class="fas fa-plus fa-lg"></i></a
+            ><button><i class="fas fa-search fa-lg"></i></button>
+            <a href="#"><i class="far fa-heart fa-lg"></i></a>
+            <a href="#"><i class="fas fa-user fa-lg"></i></a>
+          </div>
+        </section>
+      </div>
+      <div class="modal-search hidden">
+        <form action="#" method="post">
+          <input type="search" name="search" id="search" placeholder="Search">
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <a href="#" class="post">
+          <img src="./images/demo-pic-1.jpg" alt="picture1">
+        </a>
+        <a href="#" class="post">
+          <img src="./images/demo-pic-2.jpg" alt="picture2">
+        </a>
+        <a href="#" class="post">
+          <img src="./images/demo-pic-3.jpg" alt="picture3">
+        </a>
+        <a href="#" class="post">
+          <img src="./images/demo-pic-4.jpg" alt="picture4">
+        </a>
+        <a href="#" class="post">
+          <img src="./images/demo-pic-5.jpg" alt="picture5">
+        </a>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
